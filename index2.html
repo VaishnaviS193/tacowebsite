@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="author" content = "Vaishnavi S">
+    <link rel = "icon" href = "listening.png" type = "image/x-icon">
+    <link rel = "stylesheet" href = "main.css" type = "text/css">
+    <title>Tables</title>
+</head>
+<body>
+    <table>
+        <caption>My daily false schedule</caption>
+        <theader>
+        <tr>
+        <th scope = "row">&nbsp;</th>
+        <th scope = "col">Time</th>
+        <th scope = "col">Activities</th>
+        </tr>
+        </theader>
+
+        <tbody>
+        <tr>
+            
+            <th scope="row">Morning</th>
+            <td>
+                 <time datetime = "08:00">8am</time>-<time datetime = "11:00">11am</time>
+            </td>
+            <td><mark>Coding</mark></td>
+        </tr>
+        <tr>
+            <th scope ="row">Afternoon</th>
+            <td>
+                 <time datetime = "11:00">11am</time>-<time datetime = "01:00">1pm</time>
+            </td>
+            <td>Study for competitive exams</td>
+        </tr>
+        <tr>
+            <th scope ="row">noon</th>
+            <td>
+                 <time datetime = "1:00">1pm</time>-<time datetime = "03:00">3pm</time>
+            </td>
+            <td>watch something for fun as refreshment</td>
+        </tr>
+        <tr>
+            <th scope ="row">Evening</th>
+            <td>
+                 <time datetime = "3:00">3pm</time>-<time datetime = "06:00">6pm</time>
+            </td>
+            <td>do java</td>
+        </tr>
+        <tr>
+            <th scope ="row" rowspan = "2">Night</th>
+            <td rowspan ="2">All
+                 other times
+            </td>
+            <td>Relax</td>
+            
+
+        </tr>
+        <tr>
+            <td>Sleep</td>
+        </tr>
+        <tr>
+            <td>
+                whatever
+            </td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">that is all i do, just very simple eh
+                </td> 
+
+            </tr>
+        </tfoot>
+       
+    </table>
+
+    <hr>
+    <br>
+    <h2>Learning Forms</h2>
+        <article id = "contact">
+            <h3>Contact me</h3>
+            <p>I'd really like to hear from you!</p>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal choices</legend>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id ="firstName" placeholder="Jane" autocomplete="on" required  autofocus>
+                    </p>
+
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id ="lastName" placeholder="Jane" autocomplete="on" required  >
+                    </p>
+
+                    <p>
+                        <label for="Password">Password:</label>
+                        <input type="password" name="Password" id ="Password" placeholder="Your secret"  required  >
+                    </p>
+
+                <!-- <p>
+                    <label for="coffee">Favorite Coffee:</label>
+                    <select name="coffee" id="coffee" multiple size = "5">
+                        <optgroup label="Coffees">
+                            <option value="regular">Regular Coffee</option>
+                            <option value="iced">Iced Coffee</option>
+                        </optgroup>
+
+                        <optgroup label ="Espresso Drinks">
+                            <option value="latte" selected>Latte</option>
+                            <option value="cappuccino">Cappuccino</option>
+                            <option value="cortado">Cortado</option>
+                            <option value="americano">americano</option>
+                        </optgroup>
+                        <option value="other">Other</option>
+                    </select>
+                </p> -->
+                    <p>
+                        <label for="coffee">Favorite Coffee:</label>
+                        <input type="text" name = "coffee" id = "coffee" list ="coffee-list">
+                        <datalist id = "coffee-list">
+                            <option value="regular">
+                            <option value="iced">
+                            <option value="latte">
+                            <option value="americano">
+                            <option value="cappuccino">
+                            <option value="other">
+
+                        </datalist>
+
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Do you have any pets</legend>
+                    <p>
+                        <input type="radio" id ="dog">
+                        <label for="dog">Dog</label>
+                        <br>
+                        <input type="radio" id ="cat">
+                        <label for="cat">Cat</label>
+
+                    </p>
+                </fieldset>
+
+                <button type = "submit">Submit</button>
+                <button type = "reset">Reset</button>
+
+
+
+            </form>
+        </article>
+    
+</body>
+</html>
